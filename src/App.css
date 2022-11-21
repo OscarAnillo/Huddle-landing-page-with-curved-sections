@@ -23,12 +23,13 @@ img {
   /* border: 1px solid red; */
   width: 90%;
   margin: auto;
-  padding: 1em 0;
+  padding: 1.9em 0 2em 0;
 }
 .header-row {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 7em;
 }
 .header-row > div:nth-child(1) {
   width: 40%;
@@ -37,8 +38,34 @@ img {
   background: transparent;
   border: 1px solid hsl(321, 100%, 78%);
   border-radius: 40px;
+  box-shadow: 3px 3px 5px rgb(223, 229, 229);
   color: hsl(321, 100%, 78%);
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
   padding: .3em 1em;
+}
+.header-main h1 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 1.6rem;
+  color: hsl(192, 100%, 9%);
+  padding-bottom: 30px;
+}
+.header-main p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  color: hsl(192, 100%, 9%);
+  padding-bottom: 42px;
+}
+.header-main button {
+  border: none;
+  border-radius: 40px;
+  background: hsl(322, 100%, 66%);
+  box-shadow: 3px 5px 5px rgb(223, 229, 229);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  color: #fff;
+  margin-bottom: 80px;
+  padding: 1em 3em;
 }
