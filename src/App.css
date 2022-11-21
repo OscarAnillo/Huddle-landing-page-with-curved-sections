@@ -14,3 +14,31 @@
 .App {
   text-align: center;
 }
+img {
+  max-width: 100%;
+}
+
+/* HeaderComponent */
+.header-section {
+  /* border: 1px solid red; */
+  width: 90%;
+  margin: auto;
+  padding: 1em 0;
+}
+.header-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header-row > div:nth-child(1) {
+  width: 40%;
+}
+.header-row button {
+  background: transparent;
+  border: 1px solid hsl(321, 100%, 78%);
+  border-radius: 40px;
+  color: hsl(321, 100%, 78%);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  padding: .3em 1em;
+}

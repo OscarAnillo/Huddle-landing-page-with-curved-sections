@@ -1,11 +1,11 @@
+import { HeaderComponent } from "./Components/header-component";
 
-import './App.css';
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <h1>Oscar Anillo</h1>
-      <p>Web UI Developer</p>
+      <HeaderComponent />
     </div>
   );
 }
