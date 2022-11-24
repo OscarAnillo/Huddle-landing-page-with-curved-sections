@@ -23,7 +23,7 @@ img {
   /* border: 1px solid red; */
   width: 90%;
   margin: auto;
-  padding: 1.9em 0 2em 0;
+  padding: 1.9em 0 5em 0;
 }
 .header-row {
   display: flex;
@@ -64,8 +64,124 @@ img {
   background: hsl(322, 100%, 66%);
   box-shadow: 3px 5px 5px rgb(223, 229, 229);
   font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
   color: #fff;
   margin-bottom: 80px;
   padding: 1em 3em;
+}
+
+/* NumbersComponent */
+.numbers-section {
+  /* border: 1px solid red; */
+  width: 90%;
+  margin: auto;
+}
+.numbers-row {
+  display: block;
+  width: 50%;
+  margin: auto;
+  text-align: left;
+}
+.numbers-row > div {
+  margin-bottom: 6em;
+}
+.numbers-row div img {
+  width: 25%;
+}
+.numbers-row div h1 {
+  color: hsl(192, 100%, 9%);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  font-size: 4rem;
+}
+.numbers-row div p {
+  color: rgb(160, 161, 165);
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+}
+
+/* Test */
+.bg-top-image {
+  background-image: url("/public/images/bg-section-top-mobile-1.svg");
+  background-repeat: no-repeat;
+  height: 100px;
+}
+.bg-color {
+  background: rgb(246, 251, 255);
+
+}
+.text-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 4em 0;
+  /* border: 1px solid red; */
+}
+.bg-bottom-image {
+  background-image: url("/public/images/bg-section-bottom-mobile-2.svg");
+  background-repeat: no-repeat;
+  height: 100px;
+  margin-bottom: 1em;
+}
+.grow-together-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 3em 0 .5em 0;
+}
+.grow-together-text {
+  color: hsl(192, 100%, 9%);
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9rem;
+  font-weight: 400;
+  line-height: 1.7em; 
+}
+
+.flowing-conversation-title {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 3em 0 .5em 0;
+}
+.flowing-conversation-text {
+  color: hsl(192, 100%, 9%);
+  font-family: 'Open Sans', sans-serif;
+  font-size: .9rem;
+  font-weight: 400;
+  line-height: 1.7em; 
+  margin-bottom: 3em;
+}
+
+.bg-top-image-users {
+  background-image: url("/public/images/bg-section-top-mobile-2.svg");
+  background-repeat: no-repeat;
+  height: 100px;
+}
+
+
+/* BuildCommunity */
+.build-section {
+  margin: 6em 0 12.5em 0;
+}
+.build-container {
+  width: 80%;
+  margin: 0 auto;
+}
+.build-container h1 {
+  color: hsl(192, 100%, 9%);
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1.3em;
+}
+.build-container .build-btn {
+  background-color: rgb(254, 82, 192);
+  border-radius: 40px;
+  box-shadow: 3px 3px 5px rgb(223, 229, 229);
+  color: #fff;
+  display: inline-block;
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  padding: .8em 3em;
+  text-decoration: none;
 }
