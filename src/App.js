@@ -4,6 +4,7 @@ import { TextComponent } from "./Components/text-component";
 import { BuildCommunity } from "./Components/builld-community";
 
 import "./App.css";
+import { FooterComponent } from "./Components/footer-component";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <NumbersComponent />
       <TextComponent />
       <BuildCommunity />
+      <FooterComponent />
     </div>
   );
 }
