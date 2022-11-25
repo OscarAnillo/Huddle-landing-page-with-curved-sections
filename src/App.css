@@ -314,4 +314,30 @@ img {
     padding: 1.7em 2em;
     width: 30%;
   }
+  /* NumbersComponent */
+  .numbers-section {
+    max-width: 1295px;
+    margin: 3em auto;
+  }
+  .numbers-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 auto;
+    text-align: left;
+  }
+  .numbers-row > div {
+    margin-bottom: 6em;
+  }
+  .numbers-row div img {
+    width: 25%;
+  }
+  .numbers-row div h1 {
+    font-size: 6rem;
+  }
+  .numbers-row div p {
+    font-size: 1.3rem;
+    text-align: center;
+  }
 }
