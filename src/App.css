@@ -116,7 +116,7 @@ img {
   background-image: url("/public/images/bg-section-bottom-mobile-2.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100px;
+  height: 7em;
   margin-bottom: 1em;
 }
 .grow-together-title {
@@ -152,7 +152,7 @@ img {
   background-image: url("/public/images/bg-section-top-mobile-2.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100px;
+  height: 7em;
 }
 
 
@@ -269,6 +269,29 @@ img {
   width: 25px;
   height: 40px;
 }
+@media(min-width: 700px){
+  .bg-top-image {
+    height: 13em;
+  }
+  .bg-bottom-image {
+    height: 13em;
+    margin-bottom: 1em;
+  }
+  .bg-top-image-users {
+    background-image: url("/public/images/bg-section-top-mobile-2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 13em;
+  }
+
+  /* FooterComponent */
+  .footer-img {
+    background-image: url("/public/images/bg-footer-top-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 5em;
+  }
+}
 
 @media(min-width: 1000px) {
   /* HeaderComponent */
@@ -286,6 +309,9 @@ img {
   .header-row button {
     font-size: 1rem;
     padding: .65em 2em;
+  }
+  .header-row button:hover {
+    cursor: pointer;
   }
   .header-main {
     display: block;
@@ -312,6 +338,11 @@ img {
     margin-bottom: 80px;
     padding: 1.7em 2em;
     width: 30%;
+    transition: background .3s;
+  }
+  .header-main button:hover {
+    background: rgb(255, 142, 214);
+    cursor: pointer;
   }
   /* NumbersComponent */
   .numbers-section {
@@ -419,6 +450,11 @@ img {
     border-radius: 100px;
     box-shadow: 5px 8px 15px rgb(224, 228, 231);
     padding: 1.5em 6em;
+    transition: background .3s;
+  }
+  .build-container .build-btn:hover {
+    background: rgb(255, 142, 214);
+    cursor: pointer;
   }
 
   /* FooterComponent */
@@ -470,6 +506,11 @@ img {
     padding: .834em 0;
     width: 35%;
     right: 0%;
+    transition: background .3s;
+  }
+  .form button:hover {
+    background: rgb(255, 142, 214);
+    cursor: pointer;
   }
   .footer-logo {
     filter: invert(100%) contrast(200%);
@@ -497,6 +538,10 @@ img {
     margin-right: 1em;
     width: 45px;
     height: 60px;
+    transition:  color .3s;
+  }
+  .socials svg:hover {
+    color: rgb(0, 203, 253)
   }
   
 }
