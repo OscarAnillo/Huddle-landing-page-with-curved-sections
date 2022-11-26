@@ -13,6 +13,8 @@
 
 .App {
   text-align: center;
+  position: relative;
+  overflow: hidden;
 }
 img {
   max-width: 100%;
@@ -100,10 +102,11 @@ img {
   font-weight: 600;
 }
 
-/* Test */
+/* Text */
 .bg-top-image {
   background-image: url("/public/images/bg-section-top-mobile-1.svg");
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100px;
 }
 .bg-color {
@@ -119,6 +122,7 @@ img {
 .bg-bottom-image {
   background-image: url("/public/images/bg-section-bottom-mobile-2.svg");
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100px;
   margin-bottom: 1em;
 }
@@ -154,6 +158,7 @@ img {
 .bg-top-image-users {
   background-image: url("/public/images/bg-section-top-mobile-2.svg");
   background-repeat: no-repeat;
+  background-size: cover;
   height: 100px;
 }
 
@@ -190,6 +195,7 @@ img {
 .footer-img {
   background-image: url("/public/images/bg-footer-top-mobile.svg");
   background-repeat: no-repeat;
+  background-size: cover;
   height: 50px;
 }
 .footer {
@@ -340,4 +346,164 @@ img {
     font-size: 1.3rem;
     text-align: center;
   }
+
+  /* Text */
+  .bg-top-image {
+    background-image: url("/public/images/bg-section-top-desktop-1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+  }
+  .bg-color {
+    background: rgb(246, 251, 255);
+
+  }
+  .d-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .d-flex-invert {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .text-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 4em 0;
+    max-width: 1295px;
+    text-align: left;
+  }
+  .bg-bottom-image {
+    background-image: url("/public/images/bg-section-bottom-desktop-2.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    margin-bottom: 3em;
+  }
+  .grow-together-title {
+    font-size: 2.7rem;
+    margin: 3em 0 .5em 0;
+  }
+  .grow-together-text {
+    font-size: 1.3rem;
+    line-height: 1.7em; 
+    width: 80%;
+  }
+
+  .flowing-conversation-title {
+    font-size: 2.7rem;
+    margin: 3em 0 .5em 0;
+    text-align: center;
+  }
+  .flowing-conversation-text {
+    font-size: 1.3rem;
+    margin-bottom: 3em;
+    text-align: center;
+  }
+
+  .bg-top-image-users {
+    background-image: url("/public/images/bg-section-top-desktop-1.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+  }
+
+  /* Build component */
+  .build-section {
+    margin: 6em 0 12.5em 0;
+  }
+  .build-container {
+    max-width: 1925px;
+  }
+  .build-container h1 {
+    font-size: 2.7rem;
+    margin-bottom: 1.2em;
+  }
+  .build-container .build-btn {
+    border-radius: 100px;
+    box-shadow: 5px 8px 15px rgb(224, 228, 231);
+    padding: 1.5em 6em;
+  }
+
+  /* FooterComponent */
+  .footer-img {
+    background-image: url("/public/images/bg-footer-top-desktop.svg");
+    background-size: cover;
+    height: 200px;
+  }
+  .footer {
+    background-color: rgb(0, 37, 46);
+    padding: 4em 0;
+    color: #fff;
+    text-align: left;
+  }
+  .footer-container {
+    max-width: 1925px;
+    margin: 0 auto;
+  }
+  .d-flex-footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+  }
+  .d-flex-footer > div:nth-child(1) {
+    text-align: left;
+    width: 35%;
+  }
+  .newsletter {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    padding-bottom: 1em;
+    text-transform: uppercase;
+  }
+  .newsletter-paragraph {
+    width: 70%;
+  }
+  .form {
+    position: relative;
+    margin-bottom: 0em;
+  }
+  .form input {
+    border-radius: 7px;
+    margin-bottom: 0em;
+    padding: 1.29em 0;
+    width: 60%;
+  }
+  .form button {
+    padding: .834em 0;
+    width: 35%;
+    right: 0%;
+  }
+  .footer-logo {
+    filter: invert(100%) contrast(200%);
+    margin-bottom: 1.5em;
+  }
+  .footer-lorem {
+    margin-bottom: 2em;
+    width: 40%;
+  }
+  .footer-contact-row {
+    margin: 1.5em 0;
+  }
+  .div-img {
+    margin-right: 1.5em;
+  }
+  .div-p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+  }
+  .socials {
+    margin-top: 4em;
+  }
+  .socials svg {
+    margin-right: 1em;
+    width: 45px;
+    height: 60px;
+  }
+  
 }

@@ -3,7 +3,7 @@ export const TextComponent = () => {
     <>
       <div className="bg-top-image"></div>
       <div className="bg-color">
-        <div className="text-container">
+        <div className="text-container d-flex">
           <div>
             <img src="images/illustration-grow-together.svg" alt="" />
           </div>
@@ -19,7 +19,7 @@ export const TextComponent = () => {
       </div>
       <div className="bg-bottom-image"></div>
       <div>
-        <div className="text-container">
+        <div className="text-container d-flex-invert">
           <div>
             <img src="images/illustration-flowing-conversation.svg" alt="" />
           </div>
@@ -37,7 +37,7 @@ export const TextComponent = () => {
       </div>
       <div className="bg-top-image-users"></div>
       <div className="bg-color">
-        <div className="text-container">
+        <div className="text-container d-flex">
           <div>
             <img src="images/illustration-your-users.svg" alt="" />
           </div>
