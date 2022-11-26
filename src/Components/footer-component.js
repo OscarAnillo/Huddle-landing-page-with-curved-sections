@@ -1,6 +1,44 @@
+import { useState, useEffect } from "react";
 import { FaFacebookSquare, FaInstagram, FaTwitter } from "react-icons/fa";
 
 export const FooterComponent = () => {
+  const [emailInput, setEmailInput] = useState({ email: "" });
+  const [emailError, setEmailError] = useState({});
+  const [isSubmitted, setIsSubmitted] = useState(false);
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/i;
+
+  const changeHandler = (e) => {
+    const { name, value } = e.target;
+    setEmailInput({ ...emailInput, [name]: value });
+  };
+
+  const validateEmail = (value) => {
+    const error = {};
+
+    if (!value.email) {
+      error.email = "An email is required!";
+    } else if (!emailRegex.test(value.email)) {
+      error.email = "Check your email please";
+    }
+    return error;
+  };
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+    if (emailRegex.test(emailInput.email)) {
+      alert(`Signed up with email: ${emailInput.email}`);
+      setEmailInput({ email: "" });
+    }
+    setEmailError(validateEmail(emailInput));
+    setIsSubmitted(true);
+  };
+
+  useEffect(() => {
+    if (Object.keys(emailInput).length === 0 && isSubmitted) {
+      console.log("email");
+    }
+  }, [emailInput, isSubmitted]);
+
   return (
     <>
       <div className="footer-img"></div>
@@ -13,9 +51,15 @@ export const FooterComponent = () => {
               weekly newsletter. We'll never send you spam or pass your email
               address
             </p>
-            <form className="form">
-              <input type="text" />
+            <form onSubmit={submitHandler} className="form" autoComplete="off">
+              <input
+                type="text"
+                name="email"
+                value={emailInput.email}
+                onChange={changeHandler}
+              />
               <button type="submit">Subscribe</button>
+              {emailError.email && <p className="error">{emailError.email}</p>}
             </form>
           </div>
           <div>

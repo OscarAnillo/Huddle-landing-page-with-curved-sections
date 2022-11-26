@@ -237,6 +237,14 @@ img {
   position: absolute;
   right: 0;
 }
+.error {
+  color: red;
+  font-family: 'Poppins', sans-serif;
+  font-size: .8rem;
+  font-weight: 700;
+  position: absolute;
+  top: 77%;
+}
 .footer-logo {
   filter: invert(100%) contrast(200%);
   margin-bottom: 1em;
@@ -511,6 +519,12 @@ img {
   .form button:hover {
     background: rgb(255, 142, 214);
     cursor: pointer;
+  }
+  .error {
+    color: red;
+    position: absolute;
+    top: 100%;
+    font-size: 1rem;
   }
   .footer-logo {
     filter: invert(100%) contrast(200%);
