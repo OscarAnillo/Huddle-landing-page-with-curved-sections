@@ -16,7 +16,7 @@ export const HeaderComponent = () => {
           so does your audience. Create connections with your users as you
           engage in genuine discussion.
         </p>
-        <button>Get Started For Free</button>
+        <button type="button">Get Started For Free</button>
         <img src="images/screen-mockups.svg" alt="" />
       </div>
     </section>

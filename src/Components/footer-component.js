@@ -5,7 +5,7 @@ export const FooterComponent = () => {
     <>
       <div className="footer-img"></div>
       <footer className="footer">
-        <div className="footer-container">
+        <div className="footer-container d-flex-footer">
           <div>
             <h2 className="newsletter">Newsletter</h2>
             <p className="newsletter-paragraph">
