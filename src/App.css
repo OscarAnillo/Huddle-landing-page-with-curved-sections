@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap');
 
-/*
-  font-family: 'Open Sans', sans-serif;
-  font-family: 'Poppins', sans-serif;
-
-*/
-
 * {
   margin: 0;
   padding: 0;
@@ -22,7 +16,6 @@ img {
 
 /* HeaderComponent */
 .header-section {
-  /* border: 1px solid red; */
   width: 90%;
   margin: auto;
   padding: 1.9em 0 5em 0;
@@ -107,7 +100,7 @@ img {
   background-image: url("/public/images/bg-section-top-mobile-1.svg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100px;
+  height: 7em;
 }
 .bg-color {
   background: rgb(246, 251, 255);
